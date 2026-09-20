@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>منصة وعي الإعلامية</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #242424;
+      line-height: 1.8;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(92%, 1180px);
+      margin: auto;
+    }
+
+    header {
+      background: #0b4ea2;
+      color: white;
+      border-bottom: 4px solid #0097a7;
+    }
+
+    .header-inner {
+      min-height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-name {
+      font-size: 1.35rem;
+      font-weight: bold;
+    }
+
+    .brand-tagline {
+      color: #d7f4f5;
+      font-size: 0.8rem;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    nav a {
+      font-size: 0.9rem;
+    }
+
+    nav a:hover {
+      color: #ffcf19;
+    }
+
+    .hero {
+      background: #ffffff;
+      padding: 65px 0;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .hero-label {
+      color: #0097a7;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+
+    h1 {
+      color: #0b4ea2;
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1.4;
+      max-width: 700px;
+      margin: 10px 0 20px;
+    }
+
+    .hero p {
+      max-width: 600px;
+      color: #666;
+      font-size: 1.05rem;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 24px;
+      border-radius: 6px;
+      background: #e53935;
+      color: white;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 45px 0;
+    }
+
+    .section-title {
+      color: #0b4ea2;
+      margin-bottom: 25px;
+      font-size: 1.7rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #e5e5e5;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .card-image {
+      height: 160px;
+      background: #e8edf2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #777;
+      font-size: 0.85rem;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .category {
+      color: #e53935;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+
+    .card h3 {
+      font-size: 1.15rem;
+      margin: 8px 0;
+    }
+
+    .card p {
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .card a {
+      color: #0b4ea2;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      background: #242424;
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+    }
+
+    footer p {
+      margin: 5px 0;
+      color: #d4d4d4;
+    }
+
+    @media (max-width: 800px) {
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 0;
+      }
+
+      nav {
+        gap: 12px;
+      }
+
+      .hero {
+        padding: 45px 0;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container header-inner">
+
+      <a class="brand" href="index.html">
+        <span class="brand-name">منصة وعي الإعلامية</span>
+        <span class="brand-tagline">رصد . توعية . معالجة</span>
+      </a>
+
+      <nav aria-label="القائمة الرئيسية">
+        <a href="#home">الرئيسية</a>
+        <a href="#news">الأخبار</a>
+        <a href="#analysis">التحليلات</a>
+        <a href="#investigations">التحقيقات</a>
+        <a href="#awareness">التوعية</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="home">
+      <div class="container">
+
+        <div class="hero-label">منصة وعي الإعلامية</div>
+
+        <h1>الإعلام المسؤول يبدأ بالوعي</h1>
+
+        <p>
+          منصة إعلامية للرصد والتوعية والمعالجة،
+          تقدم الأخبار والتحليلات والمحتوى التوعوي.
+        </p>
+
+        <a class="button" href="#news">
+          استكشف آخر الأخبار
+        </a>
+
+      </div>
+    </section>
+
+    <section id="news">
+      <div class="container">
+
+        <h2 class="section-title">آخر الأخبار</h2>
+
+        <div class="cards">
+
+          <article class="card">
+            <div class="card-image">صورة الخبر</div>
+            <div class="card-content">
+              <span class="category">أخبار</span>
+              <h3>عنوان الخبر الأول</h3>
+              <p>ملخص تجريبي للمادة الإعلامية.</p>
+              <a href="#">قراءة المزيد</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-image">صورة الخبر</div>
+            <div class="card-content">
+              <span class="category">تحليل</span>
+              <h3>عنوان التحليل الأول</h3>
+              <p>ملخص تجريبي لمادة تحليلية.</p>
+              <a href="#">قراءة المزيد</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-image">صورة الخبر</div>
+            <div class="card-content">
+              <span class="category">توعية</span>
+              <h3>عنوان المادة التوعوية</h3>
+              <p>ملخص تجريبي لمادة توعوية.</p>
+              <a href="#">قراءة المزيد</a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="analysis">
+      <div class="container">
+        <h2 class="section-title">التحليلات</h2>
+        <p>مساحة مخصصة للتحليلات والقراءات المعمقة.</p>
+      </div>
+    </section>
+
+    <section id="investigations">
+      <div class="container">
+        <h2 class="section-title">التحقيقات</h2>
+        <p>مساحة مخصصة للتحقيقات والملفات الخاصة.</p>
+      </div>
+    </section>
+
+    <section id="awareness">
+      <div class="container">
+        <h2 class="section-title">التوعية</h2>
+        <p>محتوى توعوي يساهم في رفع مستوى الوعي.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>منصة وعي الإعلامية</p>
+      <p>رصد . توعية . معالجة</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
